@@ -1,13 +1,110 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #5a3e2b;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.logo {
+  height: 200px;
+  background: #c2dedc;
+  text-align: center;
+  padding: 5rem;
+  color: #fff;
+  font-family: Inknut Antiqua;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 2.8rem;
+  justify-content: center;
+  gap: 1rem;
+  background: #ece5c7;
+}
+
+.h3-form {
+  color: #176b87;
+  font-family: Inknut Antiqua;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.btn-task {
+  width: 340px;
+  height: 53px;
+  border-radius: 50px;
+  background: rgba(17, 106, 123, 0.62);
+  font-size: 1.8rem;
+  padding: 1.8rem 3.2rem;
+}
+
+.btn-add {
+  width: 124px;
+  height: 53px;
+  border-radius: 50px;
+  background: rgba(17, 106, 123, 0.62);
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.task-list {
+  height: 586px;
+  background: #cdc2ae;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  padding: 4rem;
+  color: #116a7b;
+}
+
+.task-list ul {
+  width: 80%;
+  list-style: none;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  align-content: start;
+  color: #000;
+}
+
+.stats {
+  height: 73px;
+  background: #116a7b;
+  text-align: center;
+  vertical-align: auto;
+  color: #fff;
+  font-family: Inknut Antiqua;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
